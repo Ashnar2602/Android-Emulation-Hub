@@ -247,21 +247,25 @@ table tbody tr:last-child td {
 .generation-section {
     margin: 40px 0;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.05);
+    background: white;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .generation-title {
-    color: #4fc3f7;
+    color: #667eea;
     font-size: 1.5em;
     margin-bottom: 5px;
-    text-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+    font-weight: 600;
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .generation-desc {
-    color: rgba(255, 255, 255, 0.8);
+    color: #666;
     font-size: 0.9em;
     margin-bottom: 20px;
     font-style: italic;
@@ -269,35 +273,49 @@ table tbody tr:last-child td {
 
 .generation-table {
     margin-top: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .generation-table th {
-    background: rgba(79, 195, 247, 0.2);
-    color: #4fc3f7;
-    text-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 .generation-table tr:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    transform: scale(1.01);
+    transition: all 0.2s ease;
 }
 
 .generation-table td {
-    color: white;
+    color: #333;
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.generation-table tbody tr:last-child td {
+    border-bottom: none;
 }
 
 .generation-table a {
-    color: #4fc3f7;
+    color: #667eea;
     text-decoration: none;
+    font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .generation-table a:hover {
-    color: #81d4fa;
-    text-shadow: 0 0 10px rgba(129, 212, 250, 0.5);
+    color: #764ba2;
+    text-decoration: underline;
 }
 
 /* Links */
