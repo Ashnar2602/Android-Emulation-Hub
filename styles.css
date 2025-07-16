@@ -21,10 +21,28 @@ header {
     padding: 20px;
     border-radius: 15px;
     margin-bottom: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
 }
 
 header h1 {
@@ -34,6 +52,7 @@ header h1 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    margin: 0;
 }
 
 nav button {
@@ -277,9 +296,19 @@ ul li p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    header {
+    .header-content {
         flex-direction: column;
         gap: 15px;
+    }
+    
+    .logo-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .logo {
+        height: 40px;
     }
     
     header h1 {
