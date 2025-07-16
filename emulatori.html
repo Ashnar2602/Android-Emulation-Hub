@@ -27,20 +27,146 @@
                 <h2 data-key="emulatori_title">Emulatori</h2>
                 <button class="back-btn" onclick="window.location.href='index.html'" data-key="back_home">← Torna alla Home</button>
             </div>
-            <table>
-                <thead>
-                    <tr>
-                        <th data-key="nome">Nome</th>
-                        <th data-key="ultima_versione">Ultima Versione</th>
-                        <th data-key="tipologia">Tipologia</th>
-                        <th data-key="prezzo">Prezzo</th>
-                        <th data-key="pagina_web">Pagina Web</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Contenuto dinamico -->
-                </tbody>
-            </table>
+            
+            <!-- Generazione 1970s -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_1970s">Prima Generazione (1970-1979)</h3>
+                <p class="generation-desc" data-key="gen_1970s_desc">Le pioniere: Atari 2600, Odyssey, Pong</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-1970s">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Generazione 1980s -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_1980s">Seconda/Terza Generazione (1980-1989)</h3>
+                <p class="generation-desc" data-key="gen_1980s_desc">NES, Master System, Game Boy</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-1980s">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Generazione 1990s -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_1990s">Quarta/Quinta Generazione (1990-1999)</h3>
+                <p class="generation-desc" data-key="gen_1990s_desc">SNES, Mega Drive, PlayStation, Nintendo 64</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-1990s">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Generazione 2000s -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_2000s">Sesta/Settima Generazione (2000-2009)</h3>
+                <p class="generation-desc" data-key="gen_2000s_desc">PlayStation 2, GameCube, Xbox, Wii</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-2000s">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Generazione 2010s -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_2010s">Ottava Generazione (2010-2019)</h3>
+                <p class="generation-desc" data-key="gen_2010s_desc">PlayStation 3, Xbox 360, PlayStation 4, Xbox One</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-2010s">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Console Portatili -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_handheld">Console Portatili</h3>
+                <p class="generation-desc" data-key="gen_handheld_desc">Game Boy, PSP, Nintendo DS, 3DS</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-handheld">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Arcade -->
+            <div class="generation-section">
+                <h3 class="generation-title" data-key="gen_arcade">Arcade</h3>
+                <p class="generation-desc" data-key="gen_arcade_desc">MAME, Neo Geo, CPS1/2/3</p>
+                <table class="generation-table">
+                    <thead>
+                        <tr>
+                            <th data-key="nome">Nome</th>
+                            <th data-key="ultima_versione">Ultima Versione</th>
+                            <th data-key="tipologia">Tipologia</th>
+                            <th data-key="prezzo">Prezzo</th>
+                            <th data-key="pagina_web">Pagina Web</th>
+                        </tr>
+                    </thead>
+                    <tbody id="gen-arcade">
+                        <!-- Contenuto dinamico -->
+                    </tbody>
+                </table>
+            </div>
         </section>
     </main>
     <footer>

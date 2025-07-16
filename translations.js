@@ -20,11 +20,27 @@ const translations = {
         descrizione: "Descrizione",
         footer: "Emulazione su Android",
         back_home: "← Torna alla Home",
-        // Nuove traduzioni
         explore_emulators: "Esplora Emulatori",
         explore_frontends: "Esplora Frontend",
         explore_tools: "Esplora Strumenti",
-        explore_guides: "Consulta Guide"
+        explore_guides: "Consulta Guide",
+        // Generazioni console
+        gen_1970s: "Prima Generazione (1970-1979)",
+        gen_1980s: "Seconda/Terza Generazione (1980-1989)",
+        gen_1990s: "Quarta/Quinta Generazione (1990-1999)",
+        gen_2000s: "Sesta/Settima Generazione (2000-2009)",
+        gen_2010s: "Ottava Generazione (2010-2019)",
+        gen_2020s: "Nona Generazione (2020+)",
+        gen_handheld: "Console Portatili",
+        gen_arcade: "Arcade",
+        gen_1970s_desc: "Le pioniere: Atari 2600, Odyssey, Pong",
+        gen_1980s_desc: "NES, Master System, Game Boy",
+        gen_1990s_desc: "SNES, Mega Drive, PlayStation, Nintendo 64",
+        gen_2000s_desc: "PlayStation 2, GameCube, Xbox, Wii",
+        gen_2010s_desc: "PlayStation 3, Xbox 360, PlayStation 4, Xbox One",
+        gen_2020s_desc: "PlayStation 5, Xbox Series X/S, Nintendo Switch",
+        gen_handheld_desc: "Game Boy, PSP, Nintendo DS, 3DS",
+        gen_arcade_desc: "MAME, Neo Geo, CPS1/2/3"
     },
     en: {
         title: "Android Emulation",
@@ -47,10 +63,26 @@ const translations = {
         descrizione: "Description",
         footer: "Android Emulation",
         back_home: "← Back to Home",
-        // Nuove traduzioni
         explore_emulators: "Explore Emulators",
         explore_frontends: "Explore Frontends",
         explore_tools: "Explore Tools",
-        explore_guides: "Browse Guides"
+        explore_guides: "Browse Guides",
+        // Console Generations
+        gen_1970s: "First Generation (1970-1979)",
+        gen_1980s: "Second/Third Generation (1980-1989)",
+        gen_1990s: "Fourth/Fifth Generation (1990-1999)",
+        gen_2000s: "Sixth/Seventh Generation (2000-2009)",
+        gen_2010s: "Eighth Generation (2010-2019)",
+        gen_2020s: "Ninth Generation (2020+)",
+        gen_handheld: "Handheld Consoles",
+        gen_arcade: "Arcade",
+        gen_1970s_desc: "The pioneers: Atari 2600, Odyssey, Pong",
+        gen_1980s_desc: "NES, Master System, Game Boy",
+        gen_1990s_desc: "SNES, Mega Drive, PlayStation, Nintendo 64",
+        gen_2000s_desc: "PlayStation 2, GameCube, Xbox, Wii",
+        gen_2010s_desc: "PlayStation 3, Xbox 360, PlayStation 4, Xbox One",
+        gen_2020s_desc: "PlayStation 5, Xbox Series X/S, Nintendo Switch",
+        gen_handheld_desc: "Game Boy, PSP, Nintendo DS, 3DS",
+        gen_arcade_desc: "MAME, Neo Geo, CPS1/2/3"
     }
 };

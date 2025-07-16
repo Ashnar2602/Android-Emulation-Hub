@@ -243,6 +243,63 @@ table tbody tr:last-child td {
     border-bottom: none;
 }
 
+/* Generation sections */
+.generation-section {
+    margin: 40px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.generation-title {
+    color: #4fc3f7;
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    text-shadow: 0 0 20px rgba(79, 195, 247, 0.5);
+}
+
+.generation-desc {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.generation-table {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.generation-table th {
+    background: rgba(79, 195, 247, 0.2);
+    color: #4fc3f7;
+    text-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+}
+
+.generation-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.generation-table td {
+    color: white;
+}
+
+.generation-table a {
+    color: #4fc3f7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.generation-table a:hover {
+    color: #81d4fa;
+    text-shadow: 0 0 10px rgba(129, 212, 250, 0.5);
+}
+
 /* Links */
 a {
     color: #667eea;
