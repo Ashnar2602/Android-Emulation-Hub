@@ -17,11 +17,50 @@
         </nav>
     </header>
     <main>
-        <div class="disclaimer">
-            <p data-key="disclaimer">Questo progetto promuove solo l'emulazione legale. Non forniamo ROM, BIOS o file protetti da copyright.</p>
-        </div>
-        <section id="emulatori">
-            <h2 data-key="emulatori_title">Emulatori</h2>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2 data-key="hero_title">Il tuo Hub per l'Emulazione Android</h2>
+                <p data-key="hero_subtitle">Scopri emulatori, frontend e strumenti per giocare ai tuoi giochi preferiti su Android</p>
+                <div class="disclaimer">
+                    <p data-key="disclaimer">⚠️ Questo progetto promuove solo l'emulazione legale. Non forniamo ROM, BIOS o file protetti da copyright.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Cards -->
+        <section class="navigation-cards">
+            <div class="card" onclick="showSection('emulatori')">
+                <div class="card-icon">🎮</div>
+                <h3 data-key="emulatori_title">Emulatori</h3>
+                <p data-key="emulatori_desc">Scopri i migliori emulatori per Android</p>
+            </div>
+            
+            <div class="card" onclick="showSection('frontend')">
+                <div class="card-icon">🖥️</div>
+                <h3 data-key="frontend_title">Frontend</h3>
+                <p data-key="frontend_desc">Interfacce grafiche per organizzare i tuoi giochi</p>
+            </div>
+            
+            <div class="card" onclick="showSection('driver_tool')">
+                <div class="card-icon">🛠️</div>
+                <h3 data-key="driver_tool_title">Driver e Tool</h3>
+                <p data-key="tools_desc">Strumenti e driver utili per l'emulazione</p>
+            </div>
+            
+            <div class="card" onclick="showSection('guide')">
+                <div class="card-icon">📚</div>
+                <h3 data-key="guide_title">Guide</h3>
+                <p data-key="guide_desc">Tutorial e guide per iniziare</p>
+            </div>
+        </section>
+
+        <!-- Content Sections (Initially Hidden) -->
+        <section id="emulatori" class="content-section hidden">
+            <div class="section-header">
+                <h2 data-key="emulatori_title">Emulatori</h2>
+                <button class="back-btn" onclick="showHome()" data-key="back_home">← Torna alla Home</button>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -37,8 +76,12 @@
                 </tbody>
             </table>
         </section>
-        <section id="frontend">
-            <h2 data-key="frontend_title">Frontend</h2>
+
+        <section id="frontend" class="content-section hidden">
+            <div class="section-header">
+                <h2 data-key="frontend_title">Frontend</h2>
+                <button class="back-btn" onclick="showHome()" data-key="back_home">← Torna alla Home</button>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -54,8 +97,12 @@
                 </tbody>
             </table>
         </section>
-        <section id="driver_tool">
-            <h2 data-key="driver_tool_title">Driver e Tool</h2>
+
+        <section id="driver_tool" class="content-section hidden">
+            <div class="section-header">
+                <h2 data-key="driver_tool_title">Driver e Tool</h2>
+                <button class="back-btn" onclick="showHome()" data-key="back_home">← Torna alla Home</button>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -69,8 +116,12 @@
                 </tbody>
             </table>
         </section>
-        <section id="guide">
-            <h2 data-key="guide_title">Guide</h2>
+
+        <section id="guide" class="content-section hidden">
+            <div class="section-header">
+                <h2 data-key="guide_title">Guide</h2>
+                <button class="back-btn" onclick="showHome()" data-key="back_home">← Torna alla Home</button>
+            </div>
             <ul>
                 <!-- Contenuto dinamico -->
             </ul>

@@ -1,10 +1,17 @@
 const translations = {
     it: {
         title: "Emulazione su Android",
+        hero_title: "Il tuo Hub per l'Emulazione Android",
+        hero_subtitle: "Scopri emulatori, frontend e strumenti per giocare ai tuoi giochi preferiti su Android",
+        disclaimer: "⚠️ Questo progetto promuove solo l'emulazione legale. Non forniamo ROM, BIOS o file protetti da copyright.",
         emulatori_title: "Emulatori",
+        emulatori_desc: "Scopri i migliori emulatori per Android",
         frontend_title: "Frontend",
+        frontend_desc: "Interfacce grafiche per organizzare i tuoi giochi",
         driver_tool_title: "Driver e Tool",
+        tools_desc: "Strumenti e driver utili per l'emulazione",
         guide_title: "Guide",
+        guide_desc: "Tutorial e guide per iniziare",
         nome: "Nome",
         ultima_versione: "Ultima Versione",
         tipologia: "Tipologia",
@@ -12,14 +19,21 @@ const translations = {
         pagina_web: "Pagina Web",
         descrizione: "Descrizione",
         footer: "Emulazione su Android",
-        disclaimer: "Questo progetto promuove solo l'emulazione legale. Non forniamo ROM, BIOS o file protetti da copyright."
+        back_home: "← Torna alla Home"
     },
     en: {
         title: "Android Emulation",
+        hero_title: "Your Android Emulation Hub",
+        hero_subtitle: "Discover emulators, frontends and tools to play your favorite games on Android",
+        disclaimer: "⚠️ This project promotes legal emulation only. We do not provide ROMs, BIOS or copyrighted files.",
         emulatori_title: "Emulators",
+        emulatori_desc: "Discover the best emulators for Android",
         frontend_title: "Frontend",
-        driver_tool_title: "Drivers and Tools",
+        frontend_desc: "Graphical interfaces to organize your games",
+        driver_tool_title: "Drivers & Tools",
+        tools_desc: "Useful tools and drivers for emulation",
         guide_title: "Guides",
+        guide_desc: "Tutorials and guides to get started",
         nome: "Name",
         ultima_versione: "Latest Version",
         tipologia: "Type",
@@ -27,6 +41,6 @@ const translations = {
         pagina_web: "Web Page",
         descrizione: "Description",
         footer: "Android Emulation",
-        disclaimer: "This project promotes legal emulation only. We do not provide ROMs, BIOS or copyrighted files."
+        back_home: "← Back to Home"
     }
 };
