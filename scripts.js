@@ -37,42 +37,12 @@ const guideData = [
 // Lingua predefinita
 let currentLanguage = 'it';
 
-// Funzione per mostrare/nascondere sezioni
-function showSection(sectionId) {
-    // Nascondi hero e navigation cards
-    document.querySelector('.hero').style.display = 'none';
-    document.querySelector('.navigation-cards').style.display = 'none';
-    
-    // Nascondi tutte le sezioni
-    document.querySelectorAll('.content-section').forEach(section => {
-        section.classList.add('hidden');
-    });
-    
-    // Mostra la sezione selezionata
-    document.getElementById(sectionId).classList.remove('hidden');
-    
-    // Aggiorna il contenuto dinamico
-    updateTables();
-}
-
-// Funzione per tornare alla home
-function showHome() {
-    // Mostra hero e navigation cards
-    document.querySelector('.hero').style.display = 'block';
-    document.querySelector('.navigation-cards').style.display = 'grid';
-    
-    // Nascondi tutte le sezioni
-    document.querySelectorAll('.content-section').forEach(section => {
-        section.classList.add('hidden');
-    });
-}
-
 // Funzione per cambiare lingua
 function changeLanguage(lang) {
     currentLanguage = lang;
     document.documentElement.lang = lang;
     
-    // Aggiorna titolo e altri elementi statici
+    // Aggiorna titolo
     document.title = translations[lang]['title'];
     
     // Aggiorna tutti gli elementi con attributo data-key
@@ -84,77 +54,17 @@ function changeLanguage(lang) {
         }
     });
     
-    // Aggiorna tabelle con dati dinamici
-    updateTables();
+    // Salva la lingua nel localStorage
+    localStorage.setItem('preferred-language', lang);
 }
 
-// Funzione per popolare le tabelle con i dati
-function updateTables() {
-    // Popola tabella emulatori
-    const emulatorsTable = document.querySelector('#emulatori tbody');
-    if (emulatorsTable) {
-        emulatorsTable.innerHTML = '';
-        emulatorData.forEach(emulator => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${emulator.name}</td>
-                <td>${emulator.version}</td>
-                <td>${emulator.type}</td>
-                <td>${emulator.price}</td>
-                <td><a href="${emulator.website}" target="_blank">${translations[currentLanguage]['pagina_web']}</a></td>
-            `;
-            emulatorsTable.appendChild(row);
-        });
-    }
-    
-    // Popola tabella frontend
-    const frontendTable = document.querySelector('#frontend tbody');
-    if (frontendTable) {
-        frontendTable.innerHTML = '';
-        frontendData.forEach(frontend => {
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${frontend.name}</td>
-                <td>${frontend.version}</td>
-                <td>${frontend.type}</td>
-                <td>${frontend.price}</td>
-                <td><a href="${frontend.website}" target="_blank">${translations[currentLanguage]['pagina_web']}</a></td>
-            `;
-            frontendTable.appendChild(row);
-        });
-    }
-    
-    // Popola tabella tool
-    const toolsTable = document.querySelector('#driver_tool tbody');
-    if (toolsTable) {
-        toolsTable.innerHTML = '';
-        toolsData.forEach(tool => {
-            const desc = tool.description.split('|').find(d => d.trim().startsWith(currentLanguage + ':')).trim().substring(3);
-            const row = document.createElement('tr');
-            row.innerHTML = `
-                <td>${tool.name}</td>
-                <td>${desc}</td>
-                <td><a href="${tool.website}" target="_blank">${translations[currentLanguage]['pagina_web']}</a></td>
-            `;
-            toolsTable.appendChild(row);
-        });
-    }
-    
-    // Popola lista guide
-    const guideList = document.querySelector('#guide ul');
-    if (guideList) {
-        guideList.innerHTML = '';
-        guideData.forEach(guide => {
-            const title = guide.title.split('|').find(t => t.trim().startsWith(currentLanguage + ':')).trim().substring(3);
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<a href="${guide.link}">${title}</a>`;
-            guideList.appendChild(listItem);
-        });
-    }
+// Funzione per ottenere la lingua salvata
+function getSavedLanguage() {
+    return localStorage.getItem('preferred-language') || 'it';
 }
 
 // Inizializza la pagina quando il DOM è caricato
 document.addEventListener('DOMContentLoaded', () => {
-    changeLanguage(currentLanguage);
-    showHome(); // Mostra la home all'avvio
+    const savedLanguage = getSavedLanguage();
+    changeLanguage(savedLanguage);
 });

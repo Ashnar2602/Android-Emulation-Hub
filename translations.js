@@ -19,7 +19,12 @@ const translations = {
         pagina_web: "Pagina Web",
         descrizione: "Descrizione",
         footer: "Emulazione su Android",
-        back_home: "← Torna alla Home"
+        back_home: "← Torna alla Home",
+        // Nuove traduzioni
+        explore_emulators: "Esplora Emulatori",
+        explore_frontends: "Esplora Frontend",
+        explore_tools: "Esplora Strumenti",
+        explore_guides: "Consulta Guide"
     },
     en: {
         title: "Android Emulation",
@@ -28,7 +33,7 @@ const translations = {
         disclaimer: "⚠️ This project promotes legal emulation only. We do not provide ROMs, BIOS or copyrighted files.",
         emulatori_title: "Emulators",
         emulatori_desc: "Discover the best emulators for Android",
-        frontend_title: "Frontend",
+        frontend_title: "Frontends",
         frontend_desc: "Graphical interfaces to organize your games",
         driver_tool_title: "Drivers & Tools",
         tools_desc: "Useful tools and drivers for emulation",
@@ -41,6 +46,11 @@ const translations = {
         pagina_web: "Web Page",
         descrizione: "Description",
         footer: "Android Emulation",
-        back_home: "← Back to Home"
+        back_home: "← Back to Home",
+        // Nuove traduzioni
+        explore_emulators: "Explore Emulators",
+        explore_frontends: "Explore Frontends",
+        explore_tools: "Explore Tools",
+        explore_guides: "Browse Guides"
     }
 };

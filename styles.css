@@ -130,6 +130,25 @@ nav button:hover {
 .card p {
     color: #666;
     font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.card-button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 /* Content Sections */
@@ -238,8 +257,8 @@ ul {
 
 ul li {
     background: #f8f9fa;
-    margin-bottom: 10px;
-    padding: 15px;
+    margin-bottom: 15px;
+    padding: 20px;
     border-radius: 8px;
     border-left: 4px solid #667eea;
     transition: all 0.3s ease;
@@ -248,6 +267,12 @@ ul li {
 ul li:hover {
     background: #e9ecef;
     transform: translateX(5px);
+}
+
+ul li p {
+    margin: 5px 0 0 0;
+    color: #666;
+    font-size: 0.9rem;
 }
 
 /* Responsive Design */
