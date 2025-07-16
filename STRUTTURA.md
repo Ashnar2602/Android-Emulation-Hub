@@ -106,6 +106,49 @@ const translations = {
 - **Testo**: `#333` (grigio scuro)
 - **Accent**: `#666` (grigio medio)
 
+## 🎨 Stili CSS
+
+### Linee Guida
+- **Tema principale**: Viola (#667eea, #764ba2) e grigio scuro (#666)
+- **Sfondo**: Bianco per sezioni principali e tabelle
+- **Testo**: Nero (#333) per contenuti principali, grigio scuro per descrizioni
+- **Link**: Viola con hover viola scuro
+- **Effetti**: Box-shadow per separazione visiva, transizioni per hover
+
+### File CSS
+- Tutti gli stili sono definiti in `styles.css`
+- **Regole principali**:
+  - **Tabelle**: Utilizzare classi `.generation-table` per tabelle generazionali
+  - **Sezioni**: Utilizzare classi `.generation-section` per sezioni dedicate
+  - **Titoli**: Utilizzare classi `.generation-title` per titoli con gradiente
+  - **Descrizioni**: Utilizzare classi `.generation-desc` per descrizioni in grigio scuro
+
+### Consistenza Visiva
+- **Obiettivo**: Garantire che tutte le pagine seguano lo stesso tema visivo
+- **Implementazione**: Applicare le classi CSS definite in `styles.css` senza modifiche locali
+
+### Esempio di Utilizzo
+```html
+<div class="generation-section">
+    <h3 class="generation-title">Titolo Generazione</h3>
+    <p class="generation-desc">Descrizione generazione</p>
+    <table class="generation-table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Versione</th>
+                <th>Tipologia</th>
+                <th>Prezzo</th>
+                <th>Pagina Web</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Contenuto dinamico -->
+        </tbody>
+    </table>
+</div>
+```
+
 ## 📱 Funzionalità
 
 ### Navigazione
